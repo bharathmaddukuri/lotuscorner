@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lotus CORNER | Every coffee needs a Lotus.</title>
+<link href="css/lotus.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css"/>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+	function initialize() {		
+		var latlng = new google.maps.LatLng(29.361877, 47.971807);
+		var settings = {
+			zoom: 15,
+			center: latlng,
+			mapTypeControl: true,
+			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+			navigationControl: true,
+			navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+			mapTypeId: google.maps.MapTypeId.ROADMAP};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+		var contentString = '<div>'+
+			'<div>'+
+			'</div>'+
+				'<h4>LOTUS CORNER</h4>'+
+			'<div>'+
+				'<p>Address</p>'+
+			'</div>'+
+			'</div>';
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString
+		});
+				
+		var companyImage = new google.maps.MarkerImage('images/icons/pin.png',
+			new google.maps.Size(27,50),
+			new google.maps.Point(0,0),
+			new google.maps.Point(50,50)
+		);
+
+		var companyShadow = new google.maps.MarkerImage('images/icons/logo_shadow.png',
+			new google.maps.Size(100,20),
+			new google.maps.Point(0,0),
+			new google.maps.Point(35, -35));
+
+		var companyPos = new google.maps.LatLng(29.361877, 47.971807);
+		var companyMarker = new google.maps.Marker({
+			position: companyPos,
+			map: map,
+			icon: companyImage,
+			shadow: companyShadow,
+			title:"LOTUS CORNER",
+			zIndex: 3});
+				
+		google.maps.event.addListener(companyMarker, 'click', function() {
+			infowindow.open(map,companyMarker);
+		});
+	}
+</script>
+
+</head>
+
+<body onLoad="initialize()">
+<div class="page">
+	<div class="header_wrap">
+		<div class="banner_wrap introduction">
+			<div class="banner_hold_in"><div id="king"><a href="index.html"><img src="images/lotus-corner.png" /></a></div><div class="arabic"><a href="javascript:void(0)"><img src="images/icons/world.png" align="absmiddle" /> عربي</a></div><div class="clear"></div></div><div class="clear"></div>
+		</div>
+	<div class="clear"></div>
+	</div>
+    
+	<div class="menu_holder">
+		<div class="wrap_area">
+			<ul id="nav-one" class="dropmenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="javascript:void(0)">About Us</a>
+					<ul class="img_menu" >
+						<li><a href="introduction.html">
+							<tt><img src="images/menu/info.png" /></tt>
+							<strong>Introduction</strong>
+							</a>
+						</li>
+						<li><a href="history.html">
+							<tt><img src="images/menu/history.png" /></tt>
+							<strong>History</strong>
+							</a>
+						</li>
+					</ul>
+				</li>
+                
+				<li><a href="javascript:void(0)">Drinks</a>
+					<ul class="img_menu" >
+						<li><a href="hot.html">
+							<tt><img src="images/menu/coffee.png" /></tt>
+							<strong>Hot</strong>
+							</a>
+						</li>
+						<li><a href="cold.html">
+							<tt><img src="images/menu/cocktail.png" /></tt>
+							<strong>Cold</strong>
+							</a>
+						</li>
+					</ul>
+				</li>
+                
+				<li><a href="javascript:void(0)">Food</a>
+					<ul class="img_menu" >
+						<li><a href="chef-delight.html">
+							<tt><img src="images/menu/delight.png" /></tt>
+							<strong>Chef’s Delight</strong>
+							</a>
+						</li>
+						<li><a href="desserts.html">
+							<tt><img src="images/menu/desserts.png" /></tt>
+							<strong>Desserts</strong>
+							</a>
+						</li>
+					</ul>
+				</li>
+                
+				<li><a href="javascript:void(0)">Lotus Products</a>
+					<ul class="img_menu" >
+						<li><a href="biscuits.html">
+							<tt><img src="images/menu/biscuits.png" /></tt>
+							<strong>Biscuits</strong>
+							</a>
+						</li>
+						<li><a href="spreads.html">
+							<tt><img src="images/menu/spreads.png" /></tt>
+							<strong>Spreads</strong>
+							</a>
+						</li>
+					</ul>
+				</li>
+                
+				<li><a href="stores.html">Locate Us</a></li>
+				<li><a href="employment.html">Employment</a></li>
+                <li><a href="order.html">Order</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+                
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+    
+	<div class="content_wrap">
+		<div class="wrap_area">
+        <div class="content_in">
+		<h1>Contact Us</h1>
+            <div id="left">
+            <h2>Stay in Touch</h2>
+            	<address class="address">
+                	<div class="fifty">
+                    	<div class="icon"><img src="images/icons/email_open.png" /></div>
+                        <div class="add">
+                        	<span><strong>Abdulaziz M.T Alghanim General Trading & Contracting Company – Kuwait</strong></span><br />
+                            
+                        	<span><strong>LOTUS CORNER</strong></span>
+                            <p>P.O.Box 3204,<br />Safat 13033,<br />State of Kuwait.</p>
+                        </div>
+                    </div>
+                    <div class="fifty">
+                    	<div class="icon"><img src="images/icons/telephone_blue.png" /></div>
+                        <div class="add">
+                        	<p>Tel : + ( 965 ) 22461564<br />
+                            Fax : + ( 965 ) 22461564<br />
+                            Email : <a href="mailto:contactus@aalghanim.com">contactus@aalghanim.com</a></p>
+                        </div>
+                    </div>
+                </address>
+                
+				<div class="mapWrapper"><div id="map_canvas" class="map_canvas">&nbsp;</div></div>
+            
+            </div>
+            <div id="right">
+            	<h2>Contact Form</h2>
+                <div id="contactform">
+                	<form>
+                    	<div class="formfield"><input type="text" name="name" id="name" value="Name" onfocus="if(this.value=='Name')this.value='';" onblur="if(this.value=='')this.value='Name';" class="field" /></div>
+                        <div class="formfield"><input type="text" name="mobile" id="mobile" value="Mobile" onfocus="if(this.value=='Mobile')this.value='';" onblur="if(this.value=='')this.value='Mobile';" class="field" /></div>
+                        <div class="formfield"><input type="text" name="email" id="email" value="Email" onfocus="if(this.value=='Email')this.value='';" onblur="if(this.value=='')this.value='Email';" class="field" /></div>                        
+                      <div class="formfield"><textarea name="comments" id="comments" value="Comments" onfocus="if(this.value=='Comments')this.value='';" onblur="if(this.value=='')this.value='Comments';" cols="40" rows="3" class="field">Comments</textarea></div>
+						<div class="formfield">
+							<input type="submit" name="button" id="button" value="Submit" class="button" />
+							<input type="reset" name="Reset" id="button" value="Reset" class="button" />
+						</div>                        
+                    </form>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+		<div class="clear"></div>
+		</div>
+	</div>
+    
+	<div class="footer_wrap">
+		<div class="light_green">
+			<div class="footer_hold">
+				<div class="f_sitemap">
+					<h5>Sitemap</h5>
+					<a href="javascript:void(0)">Latest Offers</a>
+					<a href="javascript:void(0)">Comments</a>
+					<a href="javascript:void(0)">Suggestions</a>
+                    <a href="register.html">Register</a>
+				</div>
+                
+				<div class="f_contactus">
+					<h5>Contact Us</h5>
+					<p><strong>LOTUS CORNER</strong><br />P.O.Box 3204,<br />Safat 13033,<br />State of Kuwait.</p>
+				</div>
+                
+				<div class="f_gallery">
+					<h5>Locate Us</h5>
+                    <p><a href="stores.html"><img src="images/locate-us.jpg" /></a></p>
+				</div>
+                
+				<div class="f_join">
+					<h5>Join Us</h5>
+                    <ul class="social">
+                    	<li class="fb"><a href="https://www.facebook.com/lotuscornerkw" target="_blank">&nbsp;</a></li>
+                        <li class="tw"><a href="https://twitter.com/LotusCornerKW" target="_blank">&nbsp;</a></li>
+                        <li class="ins"><a href="http://instagram.com/lotuscornerkw" target="_blank">&nbsp;</a></li>
+                        <li class="yt"><a href="javascript:void(0)" target="_blank">&nbsp;</a></li>
+                    </ul>
+                    <div class="fb-like widget_holder" data-href="https://www.facebook.com/lotuscornerkw" data-send="false" data-width="450" data-show-faces="true" ></div>
+                    <div class="fb-follow widget_holder" data-href="https://www.facebook.com/lotuscornerkw" data-show-faces="false"></div>
+				</div>
+                <div class="clear"></div>
+				</div>
+			<div class="clear"></div>
+			</div>
+            
+            
+		<div class="dark_green">
+			<div class="footer_hold">
+				<span class="left_span">Copyright 2013 @ Lotus Corner. All Rights Reserved</span>
+				<span class="right_span">Designed by : <a href="http://www.design-master.com/" target="_blank">Design Master</a></span>
+			<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+    
+    
+    
+</div>
+
+<!-- Menu -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/dropmenu.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#nav-one").dropmenu();
+	});
+</script>
+<!-- Menu -->
+
+</body>
+</html>
